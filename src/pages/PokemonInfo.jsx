@@ -3,6 +3,10 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 
+const capitalizeFirstLetter = (string) => {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+};
+
 const PokemonInfo = () => {
   const [data, setData] = useState({});
   const [isLoading, setIsLoading] = useState(true);
@@ -15,7 +19,7 @@ const PokemonInfo = () => {
         const response = await axios.get(
           `https://pokeapi.co/api/v2/pokemon/${id}`
         );
-        console.log(response.data);
+        // console.log(response.data);
         setData(response.data);
         setIsLoading(false);
       } catch (error) {
@@ -30,20 +34,32 @@ const PokemonInfo = () => {
   ) : (
     <main>
       <div className="container">
-        <h1>1 Pokemon</h1>
+        <h1>Pokemon's info</h1>
         <div className="one-pokemon">
-          {data.forms.map((one, index) => {
-            return <p key={index}>Pokemon's name : {one.name}</p>;
-          })}
-          {data.types.map((type, index) => {
-            return (
-              <Link key={index} to={`/typeinfo/${type.type.name}`}>
-                <div>
-                  <span>Type : {type.type.name}</span>
-                </div>
-              </Link>
-            );
-          })}
+          <p>N°{data.id}</p>
+          <h2>{capitalizeFirstLetter(data.name)}</h2>
+
+          <img src={data.sprites.front_default} alt="poke img" />
+          <div className="img-type">
+            {/* types */}
+            {data.types.map((type, index) => {
+              return (
+                <Link key={index} to={`/typeinfo/${type.type.name}`}>
+                  <div className={`type ${type.type.name}`}>
+                    {type.type.name}
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+
+          {/* abilities */}
+          <p>Abilities</p>
+          <div className="abilities">
+            {data.abilities.map((ability, index) => {
+              return <span key={index}>{ability.ability.name}</span>;
+            })}
+          </div>
         </div>
       </div>
     </main>

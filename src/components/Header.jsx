@@ -20,7 +20,7 @@ const Header = ({ pokemonLogo }) => {
                 return navigate("/pokemons");
               }}
             >
-              Pokemons
+              Pokemon
             </p>
             <p
               onClick={() => {
