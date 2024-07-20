@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
+import pokeballIcon from "../assets/imgs/pokeball-icon.png";
 
 const capitalizeFirstLetter = (string) => {
   return string.charAt(0).toUpperCase() + string.slice(1);
@@ -45,7 +46,11 @@ const TypeInfo = () => {
                 <div className="pokemon-card">
                   <img
                     src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${url}.png`}
-                    alt=""
+                    alt={one.pokemon.name}
+                    onError={(e) => {
+                      e.target.onerror = null; // prevents looping
+                      e.target.src = pokeballIcon;
+                    }}
                   />
                   <p>{capitalizeFirstLetter(one.pokemon.name)}</p>
                 </div>

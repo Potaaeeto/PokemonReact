@@ -59,7 +59,7 @@ const Pokemons = () => {
                 <div className="pokemon-card">
                   <img
                     src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${url}.png`}
-                    alt=""
+                    alt={pokemon.name}
                   />
                   <p>{capitalizeFirstLetter(pokemon.name)}</p>
                 </div>

@@ -115,6 +115,11 @@ main > div {
   border: 1px solid rgb(221, 221, 221);
 }
 
+.pokemon-card img {
+  width: 96px;
+  object-fit: cover;
+}
+
 .pagination {
   margin-top: 70px;
   display: flex;
