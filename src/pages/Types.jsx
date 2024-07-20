@@ -10,8 +10,11 @@ const Types = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get("https://pokeapi.co/api/v2/type");
-        console.log(response.data);
-        setData(response.data);
+        const filteredData = response.data.results.filter(
+          (type) => type.name !== "unknown" && type.name !== "stellar"
+        );
+        // console.log(response.data);
+        setData(filteredData);
         setIsLoading(false);
       } catch (error) {
         console.log(error);
@@ -25,14 +28,14 @@ const Types = () => {
   ) : (
     <main>
       <div className="container">
-        <h1>All Types</h1>
+        <h1>Types</h1>
         <div className="types-list">
-          {data.results.map((type) => {
+          {data.map((type) => {
             // console.log(type.name);
             return (
               <Link key={type.name} to={`/typeinfo/${type.name}`}>
-                <div>
-                  <span>{type.name}</span>
+                <div className={`type-card ${type.name}`}>
+                  <p>{type.name}</p>
                 </div>
               </Link>
             );

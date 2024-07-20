@@ -40,6 +40,7 @@ const PokemonInfo = () => {
           <h2>{capitalizeFirstLetter(data.name)}</h2>
 
           <img src={data.sprites.front_default} alt="poke img" />
+          <p>Types </p>
           <div className="img-type">
             {/* types */}
             {data.types.map((type, index) => {
