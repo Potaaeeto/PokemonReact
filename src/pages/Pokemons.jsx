@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Loading from "../components/Loading";
 
 const capitalizeFirstLetter = (string) => {
   return string.charAt(0).toUpperCase() + string.slice(1);
@@ -45,7 +46,7 @@ const Pokemons = () => {
   };
 
   return isLoading ? (
-    <p>En cours de chargement...</p>
+    <Loading />
   ) : (
     <main>
       <div className="container">

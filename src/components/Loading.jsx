@@ -1,3 +1,5 @@
+import loading from "../assets/imgs/LoadingAnimationBall.gif";
+
 const Loading = () => {
   return (
     <main className="loading">

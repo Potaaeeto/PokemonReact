@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import pokeballIcon from "../assets/imgs/pokeball-icon.png";
+import Loading from "../components/Loading";
 
 const capitalizeFirstLetter = (string) => {
   return string.charAt(0).toUpperCase() + string.slice(1);
@@ -35,15 +36,17 @@ const Home = () => {
   }, []);
 
   return isLoading ? (
-    <p>En cours de chargement...</p>
+    <Loading />
   ) : (
     <main>
       <div className="container">
         <h1>Welcome Pokemon Trainer!</h1>
-        <p className="wild-pokemon">A wild Pokemon has appeared...</p>
+        <p className="wild-pokemon">
+          A wild <span>Pokemon </span>has appeared...
+        </p>
 
         {pokemon && (
-          <div className="one-pokemon home-pokemon">
+          <div className="one-pokemon">
             <p>N°{pokemon.id}</p>
             <h2>{capitalizeFirstLetter(pokemon.name)}</h2>
             <img

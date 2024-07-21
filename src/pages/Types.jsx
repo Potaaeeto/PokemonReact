@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Loading from "../components/Loading";
 
 const Types = () => {
   const [data, setData] = useState({});
@@ -24,7 +25,7 @@ const Types = () => {
   }, []);
 
   return isLoading ? (
-    <p>En cours de chargement...</p>
+    <Loading />
   ) : (
     <main>
       <div className="container">

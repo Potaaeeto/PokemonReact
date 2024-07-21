@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import pokeballIcon from "../assets/imgs/pokeball-icon.png";
+import Loading from "../components/Loading";
 
 const capitalizeFirstLetter = (string) => {
   return string.charAt(0).toUpperCase() + string.slice(1);
@@ -31,7 +32,7 @@ const TypeInfo = () => {
   }, [id]);
 
   return isLoading ? (
-    <p>En cours de chargement...</p>
+    <Loading />
   ) : (
     <main>
       <div className="container">
