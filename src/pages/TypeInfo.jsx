@@ -36,7 +36,6 @@ const TypeInfo = () => {
   ) : (
     <main>
       <div className="container">
-        {/* <h1>1 Type</h1> */}
         <p className={`one-type ${data.name}`}>{data.name}</p>
 
         <div className="pokemon-list">

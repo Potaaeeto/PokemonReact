@@ -1,21 +1,28 @@
-body {
+/* ------ GENERAL ------ */
+
+* {
   box-sizing: border-box;
+}
+
+body {
   font-family: "Nintendo U", sans-serif;
   background-color: #f6f8fc;
   background-image: url(./assets/imgs/pokeball-icon.png);
   background-repeat: no-repeat;
   background-position-x: -180px;
   background-position-y: -80px;
+  text-align: center;
 }
 
 .container {
-  width: 1280px;
-  margin: 0 auto;
+  max-width: 1230px;
+  margin: 0 auto; /* margin vertical de 0 et horizontal auto*/
+  padding: 20px;
 }
 
 h1 {
   font-size: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   font-weight: bold;
 }
 
@@ -37,6 +44,8 @@ span {
 
 a {
   text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
 p {
@@ -47,16 +56,16 @@ p {
 /* HEADER */
 header {
   height: 65px;
+  margin-bottom: 20px;
   background-color: white;
   border-bottom: 1px solid rgb(221, 221, 221);
 }
 
 header > div {
-  padding-top: 5px;
-  /* border: 1px solid red; */
   display: flex;
-  justify-content: space-between;
+  height: 100%;
   align-items: center;
+  justify-content: space-between;
 }
 
 header img {
@@ -67,31 +76,15 @@ header img:hover {
   cursor: pointer;
 }
 
-.header-paragraphs {
-  display: flex;
-  gap: 50px;
+.header-paragraphs a:last-child {
+  margin-left: 50px;
 }
 
-.header-paragraphs p {
-  /* border: 1px solid #cc0000; */
-  font-weight: bold;
-  padding: 10px;
-  border-radius: 8px;
-}
-
-.header-paragraphs p:hover {
+.header-paragraphs a:hover {
   cursor: pointer;
 }
 
 /* MAIN */
-
-main > div {
-  padding: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
 .wild-pokemon {
   margin-bottom: 50px;
@@ -101,9 +94,9 @@ main > div {
 
 .pokemon-list {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  justify-content: center;
+  gap: 13px;
 }
 
 .pokemon-card {
@@ -127,6 +120,8 @@ main > div {
 .pagination {
   margin-top: 70px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
 }
 
@@ -223,20 +218,26 @@ main > div {
 }
 
 /* PAGE Pokemon's info */
+
 .one-pokemon {
-  height: 350px;
-  width: 300px;
+  display: inline-block;
+  height: 100%;
+  width: 400px;
   padding: 50px 70px;
   border: none;
   border-radius: 10px;
   box-shadow: #ededed 0 10px 10px;
   background-color: #ffffff;
-  text-align: center;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .one-pokemon p {
   margin-bottom: 20px;
+}
+
+.one-pokemon img {
+  width: 96px;
+  object-fit: cover;
 }
 
 .img-type {
@@ -332,6 +333,7 @@ main > div {
   font-size: 17px;
   text-transform: capitalize;
   margin-bottom: 50px;
+  display: inline-block;
 }
 
 /* Couleurs pour chaque type */
@@ -403,4 +405,9 @@ main > div {
 .loading img {
   /* height: 50%; */
   margin-bottom: 30px;
+}
+
+/* ------  MEDIA QUERIES ----- */
+
+@media (max-width: 1024px) {
 }

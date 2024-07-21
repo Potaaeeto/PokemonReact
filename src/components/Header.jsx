@@ -14,22 +14,22 @@ const Header = ({ pokemonLogo }) => {
             src={pokemonLogo}
             alt="pokemon-logo"
           />
-          <div className="header-paragraphs">
-            <p
+          <nav className="header-paragraphs">
+            <a
               onClick={() => {
                 return navigate("/pokemons");
               }}
             >
               Pokemon
-            </p>
-            <p
+            </a>
+            <a
               onClick={() => {
                 return navigate("/types");
               }}
             >
               Types
-            </p>
-          </div>
+            </a>
+          </nav>
         </div>
       </header>
     </>
