@@ -456,12 +456,6 @@ header img:hover {
     margin-left: 0;
   }
 
-  /* All type list */
-  .types-list {
-    margin: 0 20px;
-    justify-content: center;
-  }
-
   .type-card {
     height: 100px;
     width: 100px;
@@ -469,5 +463,10 @@ header img:hover {
 
   .one-pokemon {
     width: auto;
+    padding: 30px 40px;
+  }
+
+  .pokemon-card {
+    padding: 5px;
   }
 }

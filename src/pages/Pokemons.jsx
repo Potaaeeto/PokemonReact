@@ -15,7 +15,7 @@ const Pokemons = () => {
   const fetchData = async (page) => {
     try {
       setIsLoading(true);
-      const limit = 20;
+      const limit = 21;
       const offset = (page - 1) * limit;
       const response = await axios.get(
         `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`
