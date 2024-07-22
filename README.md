@@ -32,6 +32,8 @@ It is fully responsive for all devices, built using ReactJS, Javascript, HTML, C
 
 ✓ Used of states
 
+✓ Loading screen
+
 ✓ Make the design responsive using media queries
 
 ## Stacks 📚
