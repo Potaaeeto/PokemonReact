@@ -445,6 +445,7 @@ header img:hover {
   .header-paragraphs a {
     /* border: 1px solid red; */
     margin-right: 20px;
+    font-size: 18px;
   }
 
   .header-paragraphs a:first-child {
@@ -457,14 +458,16 @@ header img:hover {
 
   /* All type list */
   .types-list {
-    flex-direction: column;
-    margin: 0 100px;
+    margin: 0 20px;
+    justify-content: center;
   }
 
-  /* All pokemon */
+  .type-card {
+    height: 100px;
+    width: 100px;
+  }
 
-  .pokemon-list {
-    flex-direction: column;
-    margin: 0 120px;
+  .one-pokemon {
+    width: auto;
   }
 }

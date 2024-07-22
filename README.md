@@ -1,12 +1,12 @@
 # Pokemon React - Frontend 🐥
 
-As part of my training at [Le Reacteur](https://www.lereacteur.io/) to become a full-stack developer, we were tasked with building a Pokemon's website using [Pokeapi](https://pokeapi.co/)'s API.
+As part of my training at [Le Reacteur](https://www.lereacteur.io/) to become a full-stack developer, we were tasked with building a Pokemon website using [Pokeapi](https://pokeapi.co/)'s API.
 
-_This website is just an exercice and will not be deployed or used, beside as a portfolio piece. All the images used are not my property._
+_This website is just an exercise and will not be deployed or used, besides as a portfolio piece. All the images used are not my property._
 
 ## Overview 🚀
 
-Check the live demo [here](https://pokemonreact-2024.netlify.app/) and test it! 😊
+Check out the live demo [here](https://pokemonreact-2024.netlify.app/) and test it! 😊
 
 It is fully responsive for all devices, built using ReactJS, Javascript, HTML, CSS and Axios.
 
@@ -14,23 +14,19 @@ It is fully responsive for all devices, built using ReactJS, Javascript, HTML, C
 
 ## Tasks 🧐
 
-✓ Creation of all the layout, responsive frontend
+✓ Creation of the layout, responsive frontend
 
-✓ Used of Pokeapi's API to get the list of pokemon, info on a pokemon, the list of types and the list of pokemon for each type
+✓ Use of Pokeapi's API to get the list of pokemon, info on a pokemon, the list of types and the list of pokemon for each type
 
 ✓ Displaying a random pokemon and its info on the Home page
 
-✓ Displaying all Pokemon
+✓ Displaying all Pokemon and information on each Pokemon
 
-✓ Displaying information on each Pokemon
-
-✓ Displaying all types
-
-✓ Displaying the list of pokemon for each type
+✓ Displaying all types and the list of pokemon for each type
 
 ✓ Implementing pagination
 
-✓ Used of states
+✓ Use of states
 
 ✓ Loading screen
 
