@@ -145,7 +145,7 @@ header img:hover {
   color: #cc0000;
 }
 
-/* Page of list of types */
+/* Page ALL Types */
 
 .types-list {
   display: flex;
@@ -467,13 +467,4 @@ header img:hover {
     flex-direction: column;
     margin: 0 120px;
   }
-
-  /* .pokemon-card {
-    background-color: white;
-    border: 1px solid white;
-    padding: 30px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: #ededed 0 10px 10px;
-  } */
 }

@@ -50,7 +50,6 @@ const Pokemons = () => {
   ) : (
     <main>
       <div className="container">
-        {/* <h1>Pokemon</h1> */}
         <div className="pokemon-list">
           {data.results.map((pokemon) => {
             // console.log(pokemon.name);
