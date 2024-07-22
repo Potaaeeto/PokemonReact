@@ -1,8 +1,76 @@
-# React + Vite
+# Pokemon React - Frontend 🐥
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+As part of my training at [Le Reacteur](https://www.lereacteur.io/) to become a full-stack developer, we were tasked with building a Pokemon's website using [Pokeapi](https://pokeapi.co/)'s API.
 
-Currently, two official plugins are available:
+_This website is just an exercice and will not be deployed or used, beside as a portfolio piece. All the images used are not my property._
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview 🚀
+
+Check the live demo [here](https://pokemonreact-2024.netlify.app/) and test it! 😊
+
+It is fully responsive for all devices, built using ReactJS, Javascript, HTML, CSS and Axios.
+
+<img src="./src/assets/imgs/desktop.png" alt="desktop pokemon react" width="500"/>
+
+## Tasks 🧐
+
+✓ Creation of all the layout, responsive frontend
+
+✓ Used of Pokeapi's API to get the list of pokemon, info on a pokemon, the list of types and the list of pokemon for each type
+
+✓ Displaying a random pokemon and its info on the Home page
+
+✓ Displaying all Pokemon
+
+✓ Displaying information on each Pokemon
+
+✓ Displaying all types
+
+✓ Displaying the list of pokemon for each type
+
+✓ Implementing pagination
+
+✓ Used of states
+
+✓ Make the design responsive using media queries
+
+## Stacks 📚
+
+- ReactJS
+- JavaScript
+- HTML5
+- CSS3
+- Axios
+- Media queries (responsive design)
+
+## Prerequisites 🤔
+
+Before you begin, ensure you have met the following requirements:
+
+✓ [Git](https://git-scm.com/downloads) must be installed on your operating system.
+
+## Installing Pokemon React's website 🗝️
+
+To install the website, follow these steps:
+
+1. Clone this repository or download the ZIP file
+
+```bash
+git clone https://github.com/Potaaeeto/PokemonReact.git
+```
+
+```bash
+cd PokemonReact
+```
+
+2. Install packages
+
+```bash
+yarn
+```
+
+3. When installation is complete
+
+```bash
+yarn dev
+```
